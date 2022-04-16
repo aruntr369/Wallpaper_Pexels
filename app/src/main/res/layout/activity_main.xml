@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbg"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Search Any Image"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittextbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        tools:layout_editor_absoluteX="12dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nature"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradientnature"
+            android:gravity="end|center"
+            android:text="nature"
+            android:paddingEnd="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/nature"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="start|center"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bus"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+        <TextView
+            android:id="@+id/bustv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradientbus"
+            android:gravity="end|center"
+            android:text="bus"
+            android:paddingEnd="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bus"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="start|center"/>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linear1"
+        tools:layout_editor_absoluteX="12dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/car"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+            <TextView
+                android:id="@+id/cartv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradientcar"
+                android:gravity="end|center"
+                android:text="car"
+                android:paddingEnd="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="60dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/car"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="start|center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/train"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+            <TextView
+                android:id="@+id/traintv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradienttrain"
+                android:gravity="end|center"
+                android:text="train"
+                android:paddingEnd="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="60dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/train"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="start|center"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linear2"
+        tools:layout_editor_absoluteX="12dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/treanding"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+            <TextView
+                android:id="@+id/trendingtv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradienttrending"
+                android:gravity="end|center"
+                android:text="trending"
+                android:paddingEnd="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="60dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/trending"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="start|center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="10dp"
+            android:visibility="invisible"
+            android:clickable="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+            <TextView
+                android:id="@+id/stv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradientbus"
+                android:gravity="end|center"
+                android:text="bus"
+                android:paddingEnd="30dp"
+                android:visibility="invisible"
+                android:clickable="false"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="60dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bus"
+                android:visibility="invisible"
+                android:clickable="false"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="start|center"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/linear3"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
